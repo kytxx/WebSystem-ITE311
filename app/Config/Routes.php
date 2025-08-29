@@ -1,10 +1,8 @@
 <?php
 
-use CodeIgniter\Router\RouteCollection;
+namespace Config;
 
-/**
- * @var RouteCollection $routes
- */
-// $routes->get('/', 'Home::index');
+$routes = Services::routes();
 
-$routes->get('home', 'Home::index');
+// Default route
+$routes->get('/', 'Home::index');
