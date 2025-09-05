@@ -1,6 +1,8 @@
 <?= $this->extend('template') ?>
 
 <?= $this->section('content') ?>
-    <h1>Welcome to My CodeIgniter App</h1>
-    <p>This is the Home page.</p>
+    <div class="text-center mt-5">
+        <h1>Welcome to CodeIgniter!</h1>
+        <p class="lead">This is your Bootstrap Integrated home page.</p>
+    </div>
 <?= $this->endSection() ?>
