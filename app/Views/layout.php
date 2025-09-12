@@ -12,7 +12,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* professional gradient */
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364); 
             color: #fff;
             min-height: 100vh;
             display: flex;
@@ -20,7 +20,7 @@
         }
 
         .navbar {
-            background: #0d6efd; /* bootstrap primary blue */
+            background: #0d6efd; /* bootstrap blue */
         }
 
         .navbar a {
@@ -51,7 +51,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="<?= base_url('/') ?>">🌐 MyCompany</a>
+            <a class="navbar-brand fw-bold" href="<?= base_url('/') ?>">ITE311-SARSABA</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
