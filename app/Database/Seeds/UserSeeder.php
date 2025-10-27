@@ -35,7 +35,11 @@ class UserSeeder extends Seeder
             ],
         ];
 
-        // Insert multiple records
-        $this->db->table('users')->insertBatch($data);
+        // Use INSERT IGNORE to skip duplicates
+        $values = [];
+        foreach ($data as $row) {
+            $values[] = "(" . $this->db->escape($row['username']) . ", " . $this->db->escape($row['email']) . ", " . $this->db->escape($row['password']) . ", " . $this->db->escape($row['role']) . ", " . $this->db->escape($row['created_at']) . ", " . $this->db->escape($row['updated_at']) . ")";
+        }
+        $this->db->query("INSERT IGNORE INTO users (username, email, password, role, created_at, updated_at) VALUES " . implode(', ', $values));
     }
 }

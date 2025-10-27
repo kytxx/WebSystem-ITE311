@@ -1,0 +1,30 @@
+ERROR - 2025-10-27 09:28:07 --> mysqli_sql_exception: Duplicate entry 'adminuser' for key 'username' in C:\xampp\htdocs\ITE311-Sarsaba\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\ITE311-Sarsaba\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\ITE311-Sarsaba\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\ITE311-Sarsaba\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\ITE311-Sarsaba\system\Database\BaseBuilder.php(1841): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', NULL, false)
+#4 C:\xampp\htdocs\ITE311-Sarsaba\system\Database\BaseBuilder.php(2230): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xampp\htdocs\ITE311-Sarsaba\app\Database\Seeds\UserSeeder.php(39): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\xampp\htdocs\ITE311-Sarsaba\system\Database\Seeder.php(149): App\Database\Seeds\UserSeeder->run()
+#7 C:\xampp\htdocs\ITE311-Sarsaba\system\Commands\Database\Seed.php(79): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\xampp\htdocs\ITE311-Sarsaba\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 C:\xampp\htdocs\ITE311-Sarsaba\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 C:\xampp\htdocs\ITE311-Sarsaba\system\Boot.php(388): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\ITE311-Sarsaba\system\Boot.php(133): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\ITE311-Sarsaba\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-10-27 09:29:15 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'adminuser'', ''admin@example.com'', ''$2y$10$4R0XPUGzdBBlLjvZfeij3uyv9KLic0vx...' at line 1 in C:\xampp\htdocs\ITE311-Sarsaba\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\ITE311-Sarsaba\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT IGNORE I...', 0)
+#1 C:\xampp\htdocs\ITE311-Sarsaba\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT IGNORE I...')
+#2 C:\xampp\htdocs\ITE311-Sarsaba\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT IGNORE I...')
+#3 C:\xampp\htdocs\ITE311-Sarsaba\app\Database\Seeds\UserSeeder.php(43): CodeIgniter\Database\BaseConnection->query('INSERT IGNORE I...')
+#4 C:\xampp\htdocs\ITE311-Sarsaba\system\Database\Seeder.php(149): App\Database\Seeds\UserSeeder->run()
+#5 C:\xampp\htdocs\ITE311-Sarsaba\system\Commands\Database\Seed.php(79): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#6 C:\xampp\htdocs\ITE311-Sarsaba\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Seed->run(Array)
+#7 C:\xampp\htdocs\ITE311-Sarsaba\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#8 C:\xampp\htdocs\ITE311-Sarsaba\system\Boot.php(388): CodeIgniter\CLI\Console->run()
+#9 C:\xampp\htdocs\ITE311-Sarsaba\system\Boot.php(133): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#10 C:\xampp\htdocs\ITE311-Sarsaba\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#11 {main}
