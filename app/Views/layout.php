@@ -12,37 +12,40 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #0f2027, #203a43, #2c5364); 
-            color: #fff;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 20px;
         }
 
         .navbar {
-            background: #0d6efd; /* bootstrap blue */
+            background: #ffffff;
+            border-bottom: 1px solid #ddd;
         }
 
         .navbar a {
-            color: #fff !important;
+            color: #333 !important;
             font-weight: 500;
         }
 
         .navbar a:hover {
-            color: #ffc107 !important; /* gold hover */
+            color: #007bff !important;
         }
 
         .container {
-            flex: 1;
+            max-width: 800px;
+            margin: 50px auto;
+            background: #ffffff;
             padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
 
         footer {
-            background: #0d6efd;
             text-align: center;
-            padding: 15px;
-            color: #fff;
-            margin-top: auto;
+            padding: 20px;
+            color: #6c757d;
+            margin-top: 50px;
         }
     </style>
 </head>
